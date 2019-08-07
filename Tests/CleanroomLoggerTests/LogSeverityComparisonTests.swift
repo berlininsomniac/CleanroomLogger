@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import CleanroomLogger
+@testable import CleanroomLogger
 
 class LogSeverityTests: XCTestCase
 {
@@ -24,4 +24,9 @@ class LogSeverityTests: XCTestCase
         XCTAssertTrue(LogSeverity.warning > LogSeverity.info, "Warning should be greater than Info.")
         XCTAssertTrue(LogSeverity.warning <= LogSeverity.error, "Warning should be less than or equal to Error.")
     }
+
+	static var allTests = [
+		("testLogSeverityEquality", testLogSeverityEquality),
+		("testLogSeverityComparableImplementation", testLogSeverityComparableImplementation),
+	]
 }

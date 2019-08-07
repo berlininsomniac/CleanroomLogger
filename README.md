@@ -12,14 +12,7 @@ CleanroomLogger is part of [the Cleanroom Project](https://github.com/gilt/Clean
 
 ### Swift compatibility
 
-This is the `master` branch. It uses **Swift 4.1** and **requires Xcode 9.3** to compile.
-
-
-#### Current status
-
-Branch|Build status
---------|------------------------
-[`master`](https://github.com/emaloney/CleanroomLogger)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomLogger.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomLogger)
+This is a `Swift Package` conversion. It uses **Swift Tools 5.1** and **requires Xcode 11** to compile.
 
 
 ### Contents
@@ -174,25 +167,8 @@ CleanroomLogger is provided for your use—free-of-charge—on an as-is basis. W
 
 ### Adding CleanroomLogger to your project
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
-The simplest way to integrate CleanroomLogger is with the [Carthage](https://github.com/Carthage/Carthage) dependency manager.
-
-First, add this line to your [`Cartfile`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
-
-```
-github "emaloney/CleanroomLogger" ~> 6.0.0
-```
-
-Then, use the `carthage` command to [update your dependencies](https://github.com/Carthage/Carthage#upgrading-frameworks).
-
-Finally, you’ll need to [integrate CleanroomLogger into your project](https://github.com/emaloney/CleanroomLogger/blob/master/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/CleanroomLogger/master/Documentation/API/index.html) it provides.
-
-Once successfully integrated, just add the following statement to any Swift file where you want to use CleanroomLogger:
-
-```swift
-import CleanroomLogger
-```
+The simplest way to integrate CleanroomLogger is with by using the Swift Package Manager built into Xcode 11+.
+Simply add the URL of the package to Swift Package Manager.
 
 See [the Integration document](https://github.com/emaloney/CleanroomLogger/blob/master/INTEGRATION.md) for additional details on integrating CleanroomLogger into your project.
 

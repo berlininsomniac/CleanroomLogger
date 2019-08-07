@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import CleanroomLogger
+@testable import CleanroomLogger
 
 fileprivate let _xcodeConfig = XcodeLogConfiguration(debugMode: true, verboseDebugMode: true, stdStreamsMode: .useExclusively)
 fileprivate let _recorder = BufferedLogEntryMessageRecorder(formatters: _xcodeConfig.recorders.first!.formatters)

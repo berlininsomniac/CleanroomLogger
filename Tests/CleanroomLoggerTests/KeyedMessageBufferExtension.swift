@@ -6,7 +6,7 @@
 //  Copyright © 2017 Gilt Groupe. All rights reserved.
 //
 
-import CleanroomLogger
+@testable import CleanroomLogger
 
 extension BufferedLogEntryMessageRecorder
 {
